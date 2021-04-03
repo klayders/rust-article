@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  pg_db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1q2w3e4r
+      - POSTGRES_DB=simple
+    ports:
+    - 5432:5432
